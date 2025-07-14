@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+        font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --bg-color: #F0F8FF;
+    --text-color: #131313;
+    --second-bg-color: #008BE0;
+    --main-color: ##008BE0;
+}
+
+.header {
+    border-bottom: 4px solid rgba(0, 139, 224, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 12% 0;
+    background-image: url(../assets/background.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top center;
+    display: flex;
+    z-index: 5;
+}
+
+.header img {
+    width: 7rem;
+    height: 7rem;
+}
+
+section {
+    min-height: 90vh;
+    padding: 10rem 12% 10rem;
+}
+
+.secao-principal {
+    background-color: var(--bg-color);
+}
+
+.container {
+    position: relative;
+    display: flex;
+}
+
+.container .logo-principal {
+    width: 25rem;
+    height: 25rem;
+}
+
+.container .descricao .logo-tuctor {
+    position: absolute;
+    width: 15rem;
+    height: 15rem;
+}
+
+.container .descricao p {
+    position: absolute;
+    top: 45%;
+    color: var(--text-color);
+    font-size: 15px;
+    font-weight: 600;
+    width: 65%;
+}
+
+.secao-pergunta {
+    background-image: url(../assets/background.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top center;
+    border-top: 4px solid rgba(0, 139, 224, 0.8);
+    border-bottom: 4px solid rgba(0, 139, 224, 0.8);
+}
+
+.secao-respota {
+    background-color: var(--bg-color);
+}
+
+
+
+.text-animation {
+    position: absolute;
+    top: 65%;
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.text-animation span {
+    position: relative;
+}
+
+.text-animation span::before {
+    content: "Professor";
+    color: var(--second-bg-color);
+    animation: words 20s infinite;
+}
+
+.text-animation span::after {
+    content: "";
+    background-color: var(--bg-color);
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid var(--bg-color);
+    right: -8px;
+    animation: cursor 0.6s infinite, typing 20s steps(15) infinite;
+}
+
+
+
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid var(--second-bg-color);
+    }
+}
+
+@keyframes words {
+    0%,
+    20%{
+        content: "Professor";
+    }
+    21%,
+    40%{
+        content: "Tutor";
+    }
+    41%,
+    60%{
+        content: "Auxiliar";
+    }
+    61%,
+    80%{
+        content: "Companheiro";
+    }
+    81%,
+    100%{
+        content: "Help";
+    }
+}
+
+@keyframes typing {
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95%{
+        width: 0;
+    }
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85%{
+        width: calc(100% + 8px);
+    }
+}
+
+
+
+
+
+.footer {
+    background-image: url(../assets/background.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    border-top: 4px solid rgba(0, 139, 224, 0.8);
+}
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: var(--bg-color);
+}
+
+.footer .social a {
+    font-size: 25px;
+    color: var(--bg-color);
+    border: 2px solid var(--bg-color);
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: 0.4s ease-in-out;
+}
+
+.footer .social a:hover {
+    transform: scale(1.2) translateY(-10px);
+    background-color: var(--bg-color);
+    color: var(--second-bg-color);
+    box-shadow: 0 0 25px var(--second-bg-color);
+}
+
+.footer ul {
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a {
+    color: var(--bg-color);
+    border-bottom: 3px solid transparent;
+    transition: 0.4s ease-in-out;
+}
+
+.footer ul li a:hover {
+    border-bottom: 3px solid var(--bg-color);
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer .copyright {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 16px;
+    color: var(--bg-color);
+}
