@@ -43,22 +43,28 @@ section {
 
 .secao-principal {
     background-color: var(--bg-color);
+    margin: auto;
+    margin-top: 2.5rem;
 }
 
 .container {
     position: relative;
     display: flex;
+    border-top: 5px solid var(--text-color);
+    border-bottom: 5px solid var(--text-color);
 }
 
 .container .logo-principal {
     width: 25rem;
     height: 25rem;
+
 }
 
 .container .descricao .logo-tuctor {
     position: absolute;
     width: 15rem;
     height: 15rem;
+    animation: 700ms ease-in-out;
 }
 
 .container .descricao p {
@@ -68,6 +74,28 @@ section {
     font-size: 15px;
     font-weight: 600;
     width: 65%;
+}
+
+.enfeite-topo{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    background-color: transparent;
+    border: 2rem solid transparent;
+    border-top: 2rem solid var(--text-color);
+    border-left: 2rem solid var(--second-bg-color);
+}
+
+.enfeite-fundo{
+    position: absolute;
+    margin-left: 94.5%;
+    margin-top: 29.5%;
+    width: 0px;
+    height: 0px;
+    background-color: transparent;
+    border: 2rem solid transparent;
+    border-bottom: 2rem solid var(--text-color);
+    border-right: 2rem solid var(--second-bg-color);
 }
 
 .secao-pergunta {
