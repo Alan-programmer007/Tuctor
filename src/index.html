@@ -30,11 +30,42 @@
     </section>
 
     <section class="secao-pergunta">
+            <div class="chat">
+                <h2 class="title">Assistente de estudos em programação</h2>
+                <p>Pergunte sobre bugs, erros e correções de código</p>
+                
+                <form id="formulario">
+                    <div class="linha-dupla">
+                        <input id="apiKey" type="password" placeholder="Informe a API KEY do Gemini" required>
+                        <select id="linguagem">
+                            <option value="">Selecione uma linguagem</option>
+                            <option value="java">java</option>
+                            <option value="python">python</option>
+                            <option value="javascript">javascript</option>
+                            <option value="php">php</option>
+                            <option value="golang">golang</option>
+                            <option value="c#">c#</option>
+                            <option value="c++ of duty">c++</option>
+                            <option value="c">c</option>
+                        </select>
+                    </div>
 
+                    <div class="linha-unica">
+                        <textarea id="textareaPergunta" type="text" placeholder="Ex: Hello, Word! em java..." required></textarea>
+                    </div>
+
+                    <button id="askButton">Perguntar</button>
+
+                </form>
+            </div>
     </section>
 
     <section class="secao-respota">
-        
+            <div id="iaResponse" class="hidden">
+                <div class="reponse-content">
+
+                </div>
+            </div>
     </section>
 
     <footer class="footer">
