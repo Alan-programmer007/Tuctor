@@ -335,7 +335,7 @@ button:disabled {
 }
 
 #iaResponse p {
-    color: aliceblue;
+    color: var(--bg-color);
 }
 
 .footer {

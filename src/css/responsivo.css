@@ -1,0 +1,123 @@
+@media (max-width: 1527px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 1rem;
+        text-align: center;
+  }
+
+    .container .logo-principal {
+        width: 18rem;
+        height: auto;
+        margin-bottom: 0;
+  }
+
+    .container .descricao {
+        position: relative;
+        width: 100%;
+  }
+
+    .container .descricao .logo-tuctor {
+        position: static;
+        width: 12rem;
+        height: auto;
+        margin: 0 auto 0;
+        display: block;
+  }
+
+    .container .descricao p {
+        position: static;
+        width: 100%;
+        margin: 0 auto 1rem;
+        font-size: 1rem;
+  }
+
+    .text-animation {
+        position: static;
+        font-size: 1.5rem;
+        margin-top: 1rem;
+  }
+
+    .linha-dupla {
+        flex-direction: column;
+  }
+
+    .linha-unica {
+        padding-right: 1rem;
+  }
+
+    .linha-dupla input,
+    .linha-dupla select {
+        width: 100%;
+        min-width: unset;
+  }
+
+   .linha-unica textarea {
+        width: 100%;
+        height: 8rem;
+        font-size: 1rem;
+        padding: 1rem;
+        word-break: break-word;
+  }
+
+    .secao-pergunta > div {
+        padding: 1.5rem;
+  }
+
+    .enfeite-topo,
+    .enfeite-fundo {
+        display: none;
+  }
+
+    .linha-dupla select {
+        min-width: 10%;
+  }
+
+
+}
+
+@media (max-width: 830px){
+    .secao-pergunta {
+        background-image: none;
+        background-color: #008BE0;
+    }
+}
+
+@media (min-width: 1540px) {
+    .linha-dupla {
+        flex-direction: column;
+  }
+
+    .linha-unica {
+        padding-right: 1rem;
+  }
+
+    .linha-dupla input,
+    .linha-dupla select {
+        width: 100%;
+        min-width: unset;
+  }
+
+   .linha-unica textarea {
+        width: 100%;
+        height: 8rem;
+        font-size: 1rem;
+        padding: 1rem;
+        word-break: break-word;
+  }
+
+    .secao-pergunta > div {
+        padding: 1.5rem;
+  }
+
+    .enfeite-topo,
+    .enfeite-fundo {
+        display: none;
+  }
+
+    .linha-dupla select {
+        min-width: 10%;
+  }
+
+
+}
